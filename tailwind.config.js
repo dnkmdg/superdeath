@@ -1,7 +1,14 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'general': 'kingthings, Signika, sans-serif',
+        'secondary': 'requiem, fantasy, serif',
+        'primary': 'edoregular, cursive, serif',
+        'icons': 'agathodaimonregular'
+      }
+    },
   },
   plugins: [],
 }

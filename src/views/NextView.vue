@@ -1,7 +1,6 @@
 <template>
   <main class="flex flex-col items-center justify-center w-screen h-screen">
-    <Logo class="mb-12" />
-    <RouterLink :to="'/next'" class="text-xl btn">Start</RouterLink>
+    
   </main>
 </template>
 <script setup>

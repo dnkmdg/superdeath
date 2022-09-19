@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'edoregular';
+    src: url('../fonts/edo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kingthings';
+    src: url('../fonts/kingthings.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kingthings';
+    src: url('../fonts/Moms_typewriter-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'requiem';
+    src: url('../fonts/requiem_for_a-webfont.woff2') format('woff2'),
+         url('../fonts/requiem_for_a-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'agathodaimonregular';
+    src: url('../fonts/agathoda-webfont.woff2') format('woff2'),
+         url('../fonts/agathoda-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/nimbus/nimbusmono-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/nimbus/nimbusmono-oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/nimbus/nimbusmono-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/nimbus/nimbusmono-boldoblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
