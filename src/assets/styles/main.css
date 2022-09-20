@@ -1,0 +1,51 @@
+@import './typography.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-white bg-cover font-general;
+    background-image: url('@/assets/img/dialog_bg.jpg');
+}
+
+.btn {
+    @apply leading-4 text-black transition-all bg-white font-general;
+
+    &:active,
+    &:hover {
+        @apply font-bold text-black bg-white;
+    }
+}
+
+.bg-inverted {
+    background-image: url('@/assets/img/dialog_bg_inverted.jpg');
+}
+
+.shadow-cmyk {
+    text-shadow: 0.05em 0 0 theme('colors.cyan'), -0.03em -0.04em 0 theme('colors.pink'),
+        0.025em 0.04em 0 theme('colors.yellow');
+}
+
+
+input {
+    @apply text-4xl text-center text-white bg-transparent border-b border-dotted border-b-white;
+
+    &:focus {
+        @apply outline-none bg-white/20;
+    }
+}
+
+/**
+ * Transitions
+ */
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+    position: absolute;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
