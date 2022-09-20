@@ -20,3 +20,12 @@ Level 3, kända bokstäver:
 ABCEHMOPT
 
 ALPHA BETA GAMMA OMEGA
+
+Level 4
+ABCEGHMOPT
+
+Plain	ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ
+Cipher	ÖÄÅXYZABCDEFGHIJKLMNOPQRSTUVW
+
+vem dödade kejsaren? det var brutus
+PYG XWXÖXY EYDMÖLYH? &nbsp; XYN PÖL BRUTUS

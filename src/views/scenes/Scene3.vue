@@ -32,6 +32,12 @@
                     >
                         Undersök kroppen
                     </button>
+                    <button
+                        class="p-1 mt-4 ml-4 btn"
+                        @click="deathStore.doDeath()"
+                    >
+                        Försök fly
+                    </button>
                 </p>
             </div>
             <div
@@ -47,10 +53,14 @@
                         >
                     </div>
                     <div class="mx-auto">
-                        <GlitchButton
-                            label="Sjunk djupare.."
-                            @click="$router.push({ name:'scene.3' })"
-                        />
+                        <span class="mt-4">
+                            Skriv strålens namn och överlev lite till:
+                        </span>
+                        <input
+                            v-model="rayName"
+                            type="text"
+                            @keyup.enter="submitRay"
+                        >
                     </div>
                 </div>
             </div>
@@ -62,12 +72,22 @@
 <script setup>
 import { ref } from 'vue'
 import { useDeathStore } from '@/stores/death'
-import DoomIcon from '../../components/DoomIcon.vue'
+import { useRouter } from 'vue-router'
 import skullImagePath from '@/assets/img/creepy-dark-skull.jpg'
-import GlitchButton from '../../components/GlitchButton.vue'
-    
+
+const router = useRouter()
 const deathStore = useDeathStore()
+
 let view = ref(1)
+let rayName = ref('')
+
+function submitRay(){
+    if(rayName.value.toLowerCase() !== 'omega'){
+        deathStore.doDeath()
+    } else {
+        router.push({ name: 'scene.4' })
+    }
+}
 
 </script>
     

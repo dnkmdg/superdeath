@@ -8,14 +8,12 @@ export const useDeathStore = defineStore('death', {
         amount: 0,
         showHorribleDeath: false
     }),
-    getters: {
-        randomDeath(){
-            return deaths[Math.floor(Math.random()*deaths.length)]
-        }
-    },
     actions: {
         doDeath(){
             this.showHorribleDeath = true
+        },
+        randomDeath(){
+            return deaths[Math.floor(Math.random()*deaths.length)]
         }
     }
 })

@@ -33,7 +33,7 @@
                 </p>
                 <RouterLink
                     to="/scene1"
-                    class="text-lg btn"
+                    class="mr-2 text-lg btn"
                 >
                     Gå in i skogen och bort från skriken
                 </RouterLink>

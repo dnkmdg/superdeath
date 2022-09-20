@@ -19,16 +19,16 @@
 
                 <div class="grid grid-cols-3 text-center ">
                     <DoomIcon
-                        letter="a"
-                        @click="view = 2"
+                        letter="c"
+                        @click="deathStore.doDeath()"
                     />
                     <DoomIcon
                         letter="b"
                         @click="deathStore.doDeath()"
                     />
                     <DoomIcon
-                        letter="c"
-                        @click="deathStore.doDeath()"
+                        letter="a"
+                        @click="view = 2"
                     />
                 </div>
 
@@ -46,7 +46,7 @@
                     <br><br>
                     Rätt väg märks av mig, början på alltet,<br>
                     men även slutet på er alla.<br>
-                    Armageddon börjar med mig.<br>
+                    Armageddon begynner med mig.<br>
                 </p>
 
                 <p class="italic text-pink">

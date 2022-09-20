@@ -12,7 +12,7 @@
                     På porten syns ett flertal märkliga tecken och en svårtydd text. En av era dumdristiga kamrater springer direkt fram till porten och börjar leta efter ett handtag utan framgång, och dras plötsligt av en osynlig kraft in i porten.
                 </p>
                 <p>Det dånar en röst - som om den vore inuti era huvuden:</p>
-                <p class="text-lg italic font-semibold text-center">
+                <p class="text-lg italic font-semibold">
                     "Era kräk! Lös min gåta eller dö."
                 </p>
                 <p>Paniken sätter in och ni börjar genast undersöka porten närmare.</p>

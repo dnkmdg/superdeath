@@ -29,6 +29,16 @@ const router = createRouter({
             path: '/scene3',
             name: 'scene.3',
             component: () => import('../views/scenes/Scene3.vue')
+        },
+        {
+            path: '/scene4',
+            name: 'scene.4',
+            component: () => import('../views/scenes/Scene4.vue')
+        },
+        {
+            path: '/scene5',
+            name: 'scene.5',
+            component: () => import('../views/scenes/Scene5.vue')
         }
     ]
 })
