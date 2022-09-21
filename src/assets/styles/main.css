@@ -5,10 +5,11 @@
 @tailwind utilities;
 
 body {
-    @apply text-white bg-cover font-general;
+    @apply text-white font-general;
 }
 
 #root {
+    @apply bg-cover;
     background-image: url('@/assets/img/dialog_bg.jpg');
 
     &.yellow-bg {

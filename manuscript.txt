@@ -36,20 +36,30 @@ Level 6
 abacus
 
 Level 7
-Kropp 1
+Kropp 0
 G_UTEUS MA__MUS
 Därefter kända bokstäver
 ABC_E_GHI__LM_OP_RSTU__X_
 
-Kropp 2
+Kropp 1
 STOMACHUM
 Inga nya kända bokstäver
 
-Kropp 3
+Kropp 2
 LABIA
 Inga nya kända bokstäver
 
-Kropp 4
+Kropp 3
 FEMUR
 Därefter kända bokstäver
 ABC_EFGHI__LM_OP_RSTU__X_
+
+Kropp 4
+VESICAE
+Därefter kända bokstäver
+ABC_EFGHI__LM_OP_RSTUV_X_
+
+Kropp 5
+GLANDI
+Därefter kända bokstäver
+ABCDEFGHI__LMNOP_RSTUV_X_

@@ -5,7 +5,7 @@
                 v-if="view === 1"
                 class="flex flex-col w-2/3 h-full "
             >
-                <TextArc class="mt-6 text-5xl -mb-[25%] font-secondary shadow-cmyk ">
+                <TextArc class="mt-6 text-5xl -mb-[25%] mx-16 font-secondary shadow-cmyk ">
                     Den galna kväkaren
                 </TextArc>
                 <img
@@ -59,7 +59,7 @@
                     <GlitchButton
                         label="Anta utmaningen"
                         class="text-pink font-secondary"
-                        @click="view = 'body1'"
+                        @click="view = 'body0'"
                     />
                 </div>
             </div>
@@ -160,6 +160,74 @@
                     />
                 </div>  
             </div>
+
+            <div
+                v-if="view === 'body4'"
+                class="relative flex flex-col items-center justify-center w-2/3 space-y-4 "
+            >
+                <span
+                    class="w-full text-center text-7xl shadow-cmyk"
+                    :class="{ 'font-icons': !bodies[4], 'font-secondary capitalize': !!bodies[4] }"
+                >
+                    vesicae
+                </span>
+                <div class="relative max-w-[75vh]">
+                    <img
+                        src="@/assets/img/body5.jpeg"
+                        class="max-h-[75vh] cursor-pointer mix-blend-multiply contrast-200"
+                        @click="deathStore.doDeath()"
+                    >
+                    <button
+                        class="absolute w-[10%] h-[8%] top-[46%] left-[48%]"
+                        @click="onBodyClick(4)"
+                    />
+                </div>  
+            </div>
+            <div
+                v-if="view === 'body5'"
+                class="relative flex flex-col items-center justify-center w-2/3 space-y-4 "
+            >
+                <span
+                    class="w-full text-center text-7xl shadow-cmyk"
+                    :class="{ 'font-icons': !bodies[5], 'font-secondary capitalize': !!bodies[5] }"
+                >
+                    glandi
+                </span>
+                <div class="relative max-w-[75vh]">
+                    <img
+                        src="@/assets/img/body6.png"
+                        class="max-h-[75vh] cursor-pointer mix-blend-multiply contrast-200"
+                        @click="deathStore.doDeath()"
+                    >
+                    <button
+                        class="absolute w-[29%] h-[11%] top-[84%] left-[54%]"
+                        @click="onBodyClick('done')"
+                    />
+                </div>  
+            </div>
+
+            <div
+                v-if="view === 'done'"
+                class="relative flex flex-col items-center justify-center w-2/3 space-y-4 "
+            >
+                <TextArc class="mt-6 text-5xl -mb-[25%] mx-16 font-secondary shadow-cmyk ">
+                    Den galna kväkaren
+                </TextArc>
+                <img
+                    src="@/assets/img/plague.jpeg"
+                    class="mx-auto rounded-b-full w-[40vh] mix-blend-multiply contrast-200"
+                >
+                
+                <p class="w-1/2 mx-auto mt-12 text-xl">
+                    Ni har inte vunnit kväkarens respekt, men han tittar ändå lite mindre vantroget mot er, samtidigt som han i en vid gest bjuder er in genom porten.
+                </p>
+                <div>
+                    <GlitchButton
+                        label="Äntra Ljusdalen"
+                        class="text-pink font-secondary"
+                    />
+                </div>
+            </div>
         </TransitionGroup>
     </main>
 </template>
@@ -178,12 +246,18 @@ const router = useRouter()
 const deathStore = useDeathStore()
 const uiStore = useUiStore()
 
-const view = ref('body2')
-const bodies = ref(new Array(5))
+const view = ref(1)
+const bodies = ref(new Array(6))
 
 uiStore.bgClass = 'inverted-bg'
 
 function onBodyClick(index) {
+    if(index === 'done'){
+        view.value = 'done'
+
+        return
+    }
+
     bodies.value[index] = true
 
     setTimeout(() => {
