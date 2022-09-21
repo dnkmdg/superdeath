@@ -16,13 +16,17 @@
 
 <script setup>
 import { useDeathStore } from '../stores/death'
+import { useUiStore } from '@/stores/ui'
 import { useRouter } from 'vue-router'
 import Logo from './Logo.vue'
 
 const deathStore = useDeathStore()
+const uiStore = useUiStore()
 const router = useRouter()
 
 const randomDeath = deathStore.randomDeath()
+
+uiStore.bgClass = ''
 
 function resetAndRestart(){
     deathStore.showHorribleDeath = false

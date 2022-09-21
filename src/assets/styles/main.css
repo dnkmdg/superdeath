@@ -6,7 +6,20 @@
 
 body {
     @apply text-white bg-cover font-general;
+}
+
+#root {
     background-image: url('@/assets/img/dialog_bg.jpg');
+
+    &.yellow-bg {
+        @apply text-black;
+        background-image: url('@/assets/img/dialog_bg_yellow.jpg')!important;
+    }
+
+    &.inverted-bg {
+        @apply text-black;
+        background-image: url('@/assets/img/dialog_bg_inverted.jpg')!important;
+    }
 }
 
 .btn {

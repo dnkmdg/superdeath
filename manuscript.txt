@@ -9,11 +9,6 @@ Varje scen har två eller tre val, bara ett leder vidare, de andra till en omede
         Fråga: Eliphas Levi
         Svar: Baphomet
 
-
-
-
-
-
 DOOM IKONER för alfabetet är alltid lowercase
 
 Level 3, kända bokstäver:
@@ -29,3 +24,9 @@ Cipher	ÖÄÅXYZABCDEFGHIJKLMNOPQRSTUVW
 
 vem dödade kejsaren? det var brutus
 PYG XWXÖXY EYDMÖLYH? &nbsp; XYN PÖL BRUTUS
+
+LEVEL 5, kända bokstäver:
+ABCEGHMOPRSTU
+
+Level 6
+MESHUGA
