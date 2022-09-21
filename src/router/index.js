@@ -44,6 +44,11 @@ const router = createRouter({
             path: '/scene6',
             name: 'scene.6',
             component: () => import('../views/scenes/Scene6.vue')
+        },
+        {
+            path: '/scene7',
+            name: 'scene.7',
+            component: () => import('../views/scenes/Scene7.vue')
         }
     ]
 })

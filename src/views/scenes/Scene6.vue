@@ -210,7 +210,7 @@ const router = useRouter()
 const deathStore = useDeathStore()
 const uiStore = useUiStore()
 
-const view = ref('ouija')
+const view = ref(1)
 const lettersClicked = ref('')
 const correct = ref(false)
 

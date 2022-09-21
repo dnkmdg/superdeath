@@ -1,3 +1,5 @@
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
 Hemligt ord: MORTIFER (bringer of death)
 
 Varje scen har två eller tre val, bara ett leder vidare, de andra till en omedelbar död
@@ -12,7 +14,8 @@ Varje scen har två eller tre val, bara ett leder vidare, de andra till en omede
 DOOM IKONER för alfabetet är alltid lowercase
 
 Level 3, kända bokstäver:
-ABCEHMOPT
+ABC_E__H____M_OP___T______
+
 
 ALPHA BETA GAMMA OMEGA
 
@@ -26,7 +29,27 @@ vem dödade kejsaren? det var brutus
 PYG XWXÖXY EYDMÖLYH? &nbsp; XYN PÖL BRUTUS
 
 LEVEL 5, kända bokstäver:
-ABCEGHMOPRSTU
+ABC_E_GH____M_OP_RSTU_____
+
 
 Level 6
-MESHUGA
+abacus
+
+Level 7
+Kropp 1
+G_UTEUS MA__MUS
+Därefter kända bokstäver
+ABC_E_GHI__LM_OP_RSTU__X_
+
+Kropp 2
+STOMACHUM
+Inga nya kända bokstäver
+
+Kropp 3
+LABIA
+Inga nya kända bokstäver
+
+Kropp 4
+FEMUR
+Därefter kända bokstäver
+ABC_EFGHI__LM_OP_RSTU__X_

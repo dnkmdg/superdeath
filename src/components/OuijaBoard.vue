@@ -428,7 +428,7 @@ function onOuijaClick(e){
 
 <style scoped>
     path {
-        @apply fill-pink cursor-pointer transition-all;
+        @apply fill-pink cursor-pointer transition-all opacity-75;
 
         filter: drop-shadow(4px 4px 0 theme('colors.cyan'));
 
