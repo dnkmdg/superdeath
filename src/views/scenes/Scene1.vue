@@ -110,7 +110,7 @@
 
                 <GlitchButton
                     label="Gå in i porten"
-                    @click="$router.push({ name:'scene.2' })"
+                    @click="uiStore.goToLevel({ name:'scene.2' })"
                 />
             </div>
         </TransitionGroup>
@@ -120,11 +120,15 @@
 
 <script setup>
 import { ref } from 'vue'
-import GlitchButton from '@/components/GlitchButton.vue'
 import { useDeathStore } from '@/stores/death'
+import { useUiStore } from '../../stores/ui'
+
+import GlitchButton from '@/components/GlitchButton.vue'
 import DoomIcon from '../../components/DoomIcon.vue'
     
+const uiStore = useUiStore()
 const deathStore = useDeathStore()
+
 let view = ref(1)
 let demonName = ref('')
 

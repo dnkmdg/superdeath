@@ -36,6 +36,10 @@ body {
     background-image: url('@/assets/img/dialog_bg_inverted.jpg');
 }
 
+.bg-tavern {
+    background-image: url('@/assets/img/tavern_inside.jpeg')
+}
+
 .shadow-cmyk {
     text-shadow: 0.05em 0 0 theme('colors.cyan'), -0.03em -0.04em 0 theme('colors.pink'),
         0.025em 0.04em 0 theme('colors.yellow');
@@ -55,7 +59,9 @@ input {
  */
 .fade-enter-active,
 .fade-leave-active {
-    transition: opacity 0.5s ease;
+    @apply mix-blend-multiply;
+    
+    transition: opacity 0.5s;
     position: absolute;
 }
 

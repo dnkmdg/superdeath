@@ -188,7 +188,7 @@
                         <GlitchButton
                             v-if="correct"
                             label="Gå in genom porten"
-                            @click="$router.push({ name:'scene.7' })"
+                            @click="uiStore.goToLevel({ name:'scene.7' })"
                         />
                     </Transition>
                 </div>
@@ -202,11 +202,9 @@
 import { ref } from 'vue'
 import { useDeathStore } from '@/stores/death'
 import { useUiStore } from '@/stores/ui'
-import { useRouter } from 'vue-router'
 import OuijaBoard from '../../components/OuijaBoard.vue'
 import GlitchButton from '../../components/GlitchButton.vue'
 
-const router = useRouter()
 const deathStore = useDeathStore()
 const uiStore = useUiStore()
 

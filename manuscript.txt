@@ -63,3 +63,7 @@ Kropp 5
 GLANDI
 Därefter kända bokstäver
 ABCDEFGHI__LMNOP_RSTUV_X_
+
+LEVEL 8
+Gåtor till album/låtar
+Edward Eklektikern 

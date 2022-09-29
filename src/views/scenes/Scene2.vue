@@ -70,7 +70,7 @@
                     <div class="mx-auto">
                         <GlitchButton
                             label="Sjunk djupare.."
-                            @click="$router.push({ name:'scene.3' })"
+                            @click="uiStore.goToLevel({ name:'scene.3' })"
                         />
                     </div>
                 </div>
@@ -83,10 +83,13 @@
 <script setup>
 import { ref } from 'vue'
 import { useDeathStore } from '@/stores/death'
+import { useUiStore } from '../../stores/ui'
+
 import DoomIcon from '../../components/DoomIcon.vue'
-import skullImagePath from '@/assets/img/creepy-dark-skull.jpg'
 import GlitchButton from '../../components/GlitchButton.vue'
+import skullImagePath from '@/assets/img/creepy-dark-skull.jpg'
     
+const uiStore = useUiStore()
 const deathStore = useDeathStore()
 let view = ref(1)
 

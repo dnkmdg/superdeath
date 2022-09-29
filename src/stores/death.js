@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import { useUiStore } from './ui'
 import deaths from '../data/deaths.json'
     
 
@@ -10,6 +11,9 @@ export const useDeathStore = defineStore('death', {
     }),
     actions: {
         doDeath(){
+            const uiStore = useUiStore()
+
+            uiStore.setProgress(0)
             this.showHorribleDeath = true
         },
         randomDeath(){

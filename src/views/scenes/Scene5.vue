@@ -137,7 +137,7 @@
                 </p>
                 <GlitchButton
                     label="Återhämta er..."
-                    @click="$router.push({ name:'scene.6' })"
+                    @click="uiStore.goToLevel({ name:'scene.6' })"
                 />
             </div>
         </TransitionGroup>
@@ -148,11 +148,12 @@
 <script setup>
 import { ref } from 'vue'
 import { useDeathStore } from '@/stores/death'
-import { useRouter } from 'vue-router'
-import MathWheel from '../../components/MathWheel.vue'
+import { useUiStore } from '../../stores/ui'
 
+import MathWheel from '../../components/MathWheel.vue'
 import GlitchButton from '../../components/GlitchButton.vue'    
-const router = useRouter()
+
+const uiStore = useUiStore()
 const deathStore = useDeathStore()
 let view = ref(1)
 let inputNumbers = new Array(7)

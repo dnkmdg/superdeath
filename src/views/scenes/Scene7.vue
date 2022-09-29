@@ -5,12 +5,12 @@
                 v-if="view === 1"
                 class="flex flex-col w-2/3 h-full "
             >
-                <TextArc class="mt-6 text-5xl -mb-[25%] mx-16 font-secondary shadow-cmyk ">
+                <TextArc class="mt-6 text-5xl -mb-[25%] mx-24 font-secondary shadow-cmyk ">
                     Den galna kväkaren
                 </TextArc>
                 <img
                     src="@/assets/img/plague.jpeg"
-                    class="mx-auto rounded-b-full w-[40vh] mix-blend-multiply contrast-200"
+                    class="mx-auto rounded-b-full w-[35vh] mix-blend-multiply contrast-200"
                 >
                 
                 <p class="w-1/2 mx-auto mt-12 text-xl">
@@ -52,7 +52,7 @@
                 </p>
 
                 <p class="text-2xl">
-                    För att se om ni är värdiga att fortsätta in i Ljusdalen utmanar jag er på kunskap om er egen ynkliga, bräckliga fysiologi.
+                    För att se om ni är värdiga att fortsätta in i Ljusdala utmanar jag er på kunskap om er egen ynkliga, bräckliga fysiologi.
                 </p>
 
                 <div class="mx-auto">
@@ -223,8 +223,9 @@
                 </p>
                 <div>
                     <GlitchButton
-                        label="Äntra Ljusdalen"
+                        label="Äntra Ljusdala"
                         class="text-pink font-secondary"
+                        @click="uiStore.goToLevel({ name: 'scene.8' })"
                     />
                 </div>
             </div>
@@ -237,12 +238,10 @@
 import { ref } from 'vue'
 import { useDeathStore } from '@/stores/death'
 import { useUiStore } from '@/stores/ui'
-import { useRouter } from 'vue-router'
-import OuijaBoard from '../../components/OuijaBoard.vue'
+
 import GlitchButton from '../../components/GlitchButton.vue'
 import TextArc from '../../components/TextArc.vue'
 
-const router = useRouter()
 const deathStore = useDeathStore()
 const uiStore = useUiStore()
 

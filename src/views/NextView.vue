@@ -31,12 +31,12 @@
                 <p>
                     Ni har nu två val: 
                 </p>
-                <RouterLink
-                    to="/scene1"
+                <button
                     class="mr-2 text-lg btn"
+                    @click="uiStore.goToLevel('/scene1')"
                 >
                     Gå in i skogen och bort från skriken
-                </RouterLink>
+                </button>
                 eller
                 <button
                     class="text-lg btn"
@@ -51,10 +51,12 @@
 
 <script setup>
 import { ref } from 'vue'
-import GlitchButton from '../components/GlitchButton.vue'
-import HorribleDeath from '../components/HorribleDeath.vue'
 import { useDeathStore } from '../stores/death'
+import { useUiStore } from '../stores/ui'
+import GlitchButton from '../components/GlitchButton.vue'
 
 const deathStore = useDeathStore()
+const uiStore = useUiStore()
+
 let view = ref(1)
 </script>

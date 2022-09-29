@@ -72,11 +72,11 @@
 <script setup>
 import { ref } from 'vue'
 import { useDeathStore } from '@/stores/death'
-import { useRouter } from 'vue-router'
+import { useUiStore } from '../../stores/ui'
 import skullImagePath from '@/assets/img/creepy-dark-skull.jpg'
 
-const router = useRouter()
 const deathStore = useDeathStore()
+const uiStore = useUiStore()
 
 let view = ref(1)
 let rayName = ref('')
@@ -85,7 +85,7 @@ function submitRay(){
     if(rayName.value.toLowerCase() !== 'omega'){
         deathStore.doDeath()
     } else {
-        router.push({ name: 'scene.4' })
+        uiStore.goToLevel({ name: 'scene.4' })
     }
 }
 
