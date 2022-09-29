@@ -6,13 +6,32 @@
                 class="flex flex-col w-1/3 space-y-4 text-xl"
             >
                 <p>
-                    Ni skyndar nervöst och osäkert förbi kväkaren in genom porten i det som kallas <b>Ljusdala</b>.
+                    Ni skyndar nervöst och osäkert förbi kväkaren in 
+                    genom porten i det som kallas <b>Ljusdala</b>.
                 </p>
 
-                <p>Till en början bländar ljuset era ögon, men efter ett tag återkommer himlasången som ni hörde tidigare och ni börjar ana konturerna av en stor blomstrande dal som sträcker ut sig framför er. Ni har precis klarat er igenom <b>Limboria</b> och dess väktare <b>Den galne kväkaren</b> - en plats dit <b>Baphomet</b> spottar de allra armaste av kräk för att uppehålla sig tills de antingen dör av galenskap eller dödas av varandra.</p>
-                <p>Ni har också lyckats tillskansa er magi från <b>Purpurmagikern</b> - en mäktig trollkarl som ni vet väldigt lite om - men som ni lyckades göra till vän (nåja, mindre fiende).</p>
-                <p>Ni upptäcker med ens hur utmattade ni är. De enda känslor ni förmått känna de senaste timmarna, veckorna, ja, rentavt månaderna - är skräck, hopplöshet, förtvivlan och bottenlös, allsomfattande tomhet.</p>
-                <p>Gåendes längs en vacker stenväg ser ni snart ett stort värdshus som ni snabbt enas om att besöka.</p>
+                <p>
+                    Till en början bländar ljuset era ögon, men efter ett 
+                    tag återkommer himlasången som ni hörde tidigare och ni börjar ana 
+                    konturerna av en stor blomstrande dal som sträcker ut sig framför er. 
+                    Ni har precis klarat er igenom <b>Limboria</b> och dess väktare <b>Den galne kväkaren</b> -
+                    en plats dit <b>Baphomet</b> spottar de allra armaste av kräk för att uppehålla 
+                    sig tills de antingen dör av galenskap eller dödas av varandra.
+                </p>
+                <p>
+                    Ni har också lyckats tillskansa er magi från <b>Purpurmagikern</b> -
+                    en mäktig trollkarl som ni vet väldigt lite om - men som ni 
+                    lyckades göra till vän (nåja, mindre fiende).
+                </p>
+                <p>
+                    Ni upptäcker med ens hur utmattade ni är. De enda känslor ni 
+                    förmått känna de senaste timmarna, veckorna, ja, rentavt månaderna - 
+                    är skräck, hopplöshet, förtvivlan och bottenlös, allsomfattande tomhet.
+                </p>
+                <p>
+                    Gåendes längs en vacker stenväg ser ni snart ett stort värdshus som ni 
+                    snabbt enas om att besöka.
+                </p>
                 <GlitchButton
                     label="Fortsätt"
                     class="mx-auto"
@@ -281,7 +300,7 @@ import TextArc from '../../components/TextArc.vue'
 const deathStore = useDeathStore()
 const uiStore = useUiStore()
 
-const view = ref(3)
+const view = ref(1)
 const answers = ['', '', '']
 
 const correct = [

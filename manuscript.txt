@@ -23,10 +23,10 @@ Level 4
 ABCEGHMOPT
 
 Plain	ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ
-Cipher	ÖÄÅXYZABCDEFGHIJKLMNOPQRSTUVW
+Cipher	ÖÄÅZYXWVUTSRQPONMLKJIHGFEDCBA
 
 vem dödade kejsaren? det var brutus
-PYG XWXÖXY EYDMÖLYH? &nbsp; XYN PÖL BRUTUS
+HYQ ZAZÖZY SYTKÖLYP
 
 LEVEL 5, kända bokstäver:
 ABC_E_GH____M_OP_RSTU_____
@@ -67,3 +67,6 @@ ABCDEFGHI__LMNOP_RSTUV_X_
 LEVEL 8
 Gåtor till album/låtar
 Edward Eklektikern 
+
+
+indigo, purpur, lavendel
